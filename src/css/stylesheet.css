@@ -1,0 +1,135 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#app {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+	flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+	flex-grow: 1;
+	justify-content: center;
+	text-align: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.centered-main{
+  display: flex;
+}
+
+header{
+
+	display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #302E2F;
+  color: #fff;
+}
+
+header p{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+header ul{
+  display: flex;
+  align-items: center;
+}
+
+header a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-left: 2em;
+}
+
+header li{
+  list-style-type: none;
+}
+
+header ul a:hover, .router-link-exact-active{
+  color: #AE9A65;
+}
+
+footer{
+  background-color: #302E2F;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.main-div,.single-task-div{
+  padding: 3em;
+  font-size: 1.5em;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+.centered-main h1{
+  font-size: 2em;
+  font-weight: bold;
+  margin: .5em 0;
+}
+
+.centered-main h2{
+  font-size: 1.5em;
+}
+
+/*Single Task*/
+
+.single-task-div h1{
+  font-size: 1.5em;
+  width: 20em;
+  color: #302E2F;
+}
+
+.single-task-div p{
+ margin: .5em 0;
+ color: #302E2F;
+}
+
+/*Tasks*/
+#tasks-main h1{
+  font-size: 3em;
+  font-weight: bold;
+  color: #302E2F;
+  margin-bottom: .5em;
+}
+
+#tasks-main button{
+  padding: 2em 2.5em;
+  border-radius: 2em;
+  margin: .5em;
+  width: 40%;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #302E2F;
+  outline:none;
+}
+
+.single-task-div button{
+  border-radius: 2em;
+  padding: 1em;
+  color: #302E2F;
+  font-weight: bold;
+  margin-top: .2em;
+  outline:none;
+}
+
+#tasks-main button:hover, .single-task-div button:hover{
+  background-color: #302E2F;
+  color: #AE9A65;
+}

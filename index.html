@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Class Diagram</title>
+    <script src="src/lib/vue.js"></script>
+    <script src="src/lib/vue-router.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/css/stylesheet.css">
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+      <router-view></router-view>
+      <app-footer></app-footer>
+    </div>
+    <script type="text/javascript" src="src/data.js"></script>
+    <script type="text/javascript" src="src/Model.js"></script>
+    <script type="text/javascript" src="src/components/header.js"></script>
+    <script type="text/javascript" src="src/components/home.js"></script>
+    <script type="text/javascript" src="src/components/footer.js"></script>
+    <script type="text/javascript" src="src/components/tasks.js"></script>
+    <script type="text/javascript" src="src/components/singleTask.js"></script>
+    <script type="text/javascript" src="src/routes/routes.js"></script>
+    <script type="text/javascript" src="src/Controller.js"></script>
+    <script>
+      window.onload = Controller.setup()
+    </script>  </body>
+</html>
